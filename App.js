@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  Button,
 } from 'react-native';
 
 import {
@@ -39,8 +40,14 @@ const App: () => React$Node = () => {
             </View>
           )}
           <View style={styles.body}>
+            <Button
+              title="Click Me"
+              onPress={() => {
+                alert('アラート表示');
+              }}
+            />
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One!!!????</Text>
+              <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
                 screen and then come back to see your edits.
